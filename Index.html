@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+       <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+      </style>
+       <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+
+    
+</head>
+<body class="">
+    
+    <header class="bg-blue-400">
+<div class="flex justify-between p-4">
+    <div>
+        <p class="text-3xl text-white ml-3 flex p-1"><img src="mediavideo.png" alt="">YTD</p>
+    </div>
+    <div class="text-center flex-wrap font-semibold ml-2 mt-4">
+<a class="mr-3 hover:text-white" href="#">Youtube video downloader</a>
+<a class="mr-3 hover:text-white" href="#">Video to MP3</a>
+<a class="mr-3 hover:text-white" href="#">Video to MP4</a>
+<a class="mr-3 hover:text-white rounded  bg-red-500  p-1 " href="#">More</a>
+    </div>
+</div>
+
+    </header>
+
+    <main class="mx-10 shadow-lg">
+<div class="Section-1">
+    <p class="text-4xl mt-5 text-center">Youtube to Mp4</p>
+    <p class="mt-2 text-center">Download youtube videos, convert Youtube to Mp3/Mp4 for free</p>
+
+</div>
+<div  class=" Section-2 flex items-center justify-center  bg-gray-100 rounded-xl mt-4 p-4">
+    <div class="flex flex-col sm:flex-row items-center gap-2 p-4">
+      <!-- Input Field -->
+      <div class="w-80 sm:w-auto ">
+        <input 
+          type="text" 
+          placeholder="Paste your link" 
+          class="w-full sm:w-auto px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+        >
+      </div>
+  
+      <!-- Download Button -->
+      <div>
+        <button 
+  class="w-full sm:w-auto px-5 py-2 text-white font-semibold bg-blue-600 border border-blue-600 rounded-full shadow-md hover:bg-blue-700 hover:border-blue-700 active:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all"
+>
+  Download
+</button>
+
+      </div>
+    </div>
+  </div>
+  
+  <div class="Section-3 flex items-center gap-4 bg-gray-200 p-1 m-2">
+    <div class="" ><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-14">
+        <path stroke-linecap="round" stroke-linejoin="round" d="m20.25 7.5-.625 10.632a2.25 2.25 0 0 1-2.247 2.118H6.622a2.25 2.25 0 0 1-2.247-2.118L3.75 7.5m8.25 3v6.75m0 0-3-3m3 3 3-3M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125Z" />
+      </svg>
+      </div>
+    <div>
+        <p class="text-2xl font-bold">iFlyDown Video Downloader</p> 
+        <p>Download Youtube Video & Live & Playlist & Channel Download Youtube Video in 1080p,2K,4k,8K high quality 30x Fast Download,Support 1000+ Sites</p>
+    </div>
+    <div>
+        <button 
+  class="w-full sm:w-auto px-5 py-2 text-white font-semibold bg-blue-600 border border-blue-600 rounded-full shadow-md hover:bg-blue-700 hover:border-blue-700 active:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all flex items-center">
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M9 8.25H7.5a2.25 2.25 0 0 0-2.25 2.25v9a2.25 2.25 0 0 0 2.25 2.25h9a2.25 2.25 0 0 0 2.25-2.25v-9a2.25 2.25 0 0 0-2.25-2.25H15M9 12l3 3m0 0 3-3m-3 3V2.25" />
+  </svg>
+   Download
+</button>
+    </div>
+
+  </div>
+  <div class="Section-4 flex p-4">
+    <div class="max-w-md mx-auto bg-white p-4 rounded-lg shadow-lg">
+        <!-- Tabs -->
+        <div class="flex border-b border-gray-300">
+            <button class="flex-1 text-center py-2 font-semibold text-gray-700 border-b-2 border-blue-600">
+                Video
+            </button>
+            <button class="flex-1 text-center py-2 font-semibold text-gray-700 hover:text-blue-600">
+                Audio
+            </button>
+        </div>
+
+        <!-- Table Content -->
+        <div class="mt-4">
+            <div class="grid grid-cols-3 text-sm font-semibold text-gray-700 border-b pb-2">
+                <span>File type</span>
+                <span>File size</span>
+                <span>Action</span>
+            </div>
+
+            <div class="grid grid-cols-3 text-sm text-gray-600 mt-2">
+                <span>1080p (.mp4)</span>
+                <span>5G</span>
+                <button class="flex items-center bg-green-500 text-white py-1 px-3 rounded hover:bg-green-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 8.25H7.5a2.25 2.25 0 0 0-2.25 2.25v9a2.25 2.25 0 0 0 2.25 2.25h9a2.25 2.25 0 0 0 2.25-2.25v-9a2.25 2.25 0 0 0-2.25-2.25H15M9 12l3 3m0 0 3-3m-3 3V2.25" />
+                      </svg>Download
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="shadow-lg ml-5">
+       <img class="size-48 rounded " src="Maruf.png" alt=""> 
+       <p class="font-semibold">how to setup for cctv <br> camera-full class in one video.</p>
+       <p>Duration: 04:30:26</p>
+    </div>
+  </div>
+
+  <p class="text-center mt-5">
+    into high-quality MP4 files, ranging from 720p and full HD 1080p to 4k and 8k . Here are some of the reasons why Yt5s stands out from the competition:
+  </p>
+
+  <div class="Section-5 mt-4">
+    <div class="max-w-6xl mx-auto">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Box 1 -->
+            <div class="bg-white p-4 shadow rounded-lg flex items-start gap-4">
+                <div class="text-blue-500 text-3xl">📹</div>
+                <div>
+                    <h3 class="font-semibold text-lg">High-Quality Conversion</h3>
+                    <p class="text-sm text-gray-600">
+                        Yt5s guarantees high-quality YouTube to MP4 conversions, preserving the original video quality like 720p, full HD1080p, 4k, and even 8k.
+                    </p>
+                </div>
+            </div>
+            <!-- Box 2 -->
+            <div class="bg-white p-4 shadow rounded-lg flex items-start gap-4">
+                <div class="text-red-500 text-3xl">🔄</div>
+                <div>
+                    <h3 class="font-semibold text-lg">Compatibility with Major Platforms</h3>
+                    <p class="text-sm text-gray-600">
+                        Our YouTube mp4 converter is compatible with all major platforms, including Windows, Mac, Android, iPhone, and other devices.
+                    </p>
+                </div>
+            </div>
+            <!-- Box 3 -->
+            <div class="bg-white p-4 shadow rounded-lg flex items-start gap-4">
+                <div class="text-green-500 text-3xl">🛡️</div>
+                <div>
+                    <h3 class="font-semibold text-lg">User-Friendly Interface</h3>
+                    <p class="text-sm text-gray-600">
+                        With a simple and intuitive interface, Yt5s makes converting YouTube videos to MP4 easy for users of all skill levels.
+                    </p>
+                </div>
+            </div>
+            <!-- Box 4 -->
+            <div class="bg-white p-4 shadow rounded-lg flex items-start gap-4">
+                <div class="text-yellow-500 text-3xl">⚡</div>
+                <div>
+                    <h3 class="font-semibold text-lg">Safe and Fast Conversion</h3>
+                    <p class="text-sm text-gray-600">
+                        Yt5s offers secure and speedy YouTube to MP4 conversions. It can transform your content fast and safely, ensuring a smooth and protected experience.
+                    </p>
+                </div>
+            </div>
+            <!-- Box 5 -->
+            <div class="bg-white p-4 shadow rounded-lg flex items-start gap-4">
+                <div class="text-red-500 text-3xl">🎥</div>
+                <div>
+                    <h3 class="font-semibold text-lg">Multiple Formats Supported</h3>
+                    <p class="text-sm text-gray-600">
+                        Yt5s supports a wide range of formats and can convert YouTube videos to MP4, 3GP, WEBM, MP3, OGG, and M4A. This versatility ensures compatibility on any device.
+                    </p>
+                </div>
+            </div>
+            <!-- Box 6 -->
+            <div class="bg-white p-4 shadow rounded-lg flex items-start gap-4">
+                <div class="text-blue-500 text-3xl">😊</div>
+                <div>
+                    <h3 class="font-semibold text-lg">No Installation Required</h3>
+                    <p class="text-sm text-gray-600">
+                        Without any installation, access the full suite of online YouTube to MP4 conversion from Yt5s free of charge. All you need is an internet connection.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+<p class="text-center text-3xl font-bold mt-4">The best Youtube to MP4 converter</p>
+
+<div class="max-w-6xl mx-auto mt-5">
+    <div class="flex flex-wrap justify-center gap-4">
+        <!-- Icon 1 -->
+        <div class="flex flex-col items-center justify-center bg-red-500 text-white w-24 h-24 rounded-2xl">
+            <span class="text-sm font-bold">YouTube</span>
+            <span class="text-lg font-bold">MP4</span>
+        </div>
+        <!-- Icon 2 -->
+        <div class="flex flex-col items-center justify-center bg-red-500 text-white w-24 h-24 rounded-2xl">
+            <span class="text-sm font-bold">YouTube</span>
+            <span class="text-lg font-bold">MP3</span>
+        </div>
+        <!-- Icon 3 -->
+        <div class="flex flex-col items-center justify-center bg-red-500 text-white w-24 h-24 rounded-2xl">
+            <span class="text-sm font-bold">YouTube</span>
+            <span class="text-lg font-bold">3GP</span>
+        </div>
+        <!-- Icon 4 -->
+        <div class="flex flex-col items-center justify-center bg-red-500 text-white w-24 h-24 rounded-2xl">
+            <span class="text-sm font-bold">YouTube</span>
+            <span class="text-lg font-bold">WEBM</span>
+        </div>
+        <!-- Icon 5 -->
+        <div class="flex flex-col items-center justify-center bg-red-500 text-white w-24 h-24 rounded-2xl">
+            <span class="text-sm font-bold">YouTube</span>
+            <span class="text-lg font-bold">M4A</span>
+        </div>
+    </div>
+</div>
+<p class="text-center mt-5">We invite you to try Yt5s YouTube MP4 Converter and experience the difference for yourself. Join our growing community of satisfied users and experience the ultimate solution for video conversion. Don't forget to share our platform with your friends and family, so they too can enjoy the benefits of Yt5s YouTube MP4 Converter.</p>
+
+<p class="text-center text-3xl font-bold mt-4">How to Convert Youtube to mp4 in 3 Fast Steps</p>
+
+<div class="mt-5">
+    <div class="flex flex-col items-center justify-center space-y-8 md:flex-row md:space-x-8 ">
+        <div class="bg-blue-100 rounded-full p-6 text-center">
+          <h2 class="text-2xl font-bold mb-2">1</h2>
+          <p>Simply enter your desired YouTube link or type in relevant keywords in the search box, then hit "convert."</p>
+        </div>
+      
+        <div class="bg-red-100 rounded-full p-6 text-center">
+          <h2 class="text-2xl font-bold mb-2">2</h2>
+          <p>Choose your preferred output format (MP4 or MP3) and initiate the transfer process by clicking the "Download" button.</p>
+        </div>
+      
+        <div class="bg-green-100 rounded-full p-6 text-center">
+          <h2 class="text-2xl font-bold mb-2">3</h2>
+          <p>Wait briefly for the conversion to finish and download your file. It's that straightforward and user-friendly.</p>
+        </div>
+      </div>
+</div>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-6 text-center space-x-4 mt-5 >
+        <a href="#" class="hover:underline">&copy; 2025 ytd.best</a>
+        <a href="#" class="hover:underline">Terms of Use</a>
+        <a href="#" class="hover:underline">Privacy Policy</a>
+    </footer>
+</body>
+</html>
